@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
+   <style>
+ #gameCarousel {
+  position: relative; /* ensure it's the positioning context */
+}
+
+#gameCarousel .carousel-control-prev,
+#gameCarousel .carousel-control-next {
+  top: 100%; /* place at bottom */
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+#gameCarousel .carousel-control-prev {
+  left: 92% !important; /* push further to the right */
+}
+
+#gameCarousel .carousel-control-next {
+  left: 97% !important; /* push further to the left */
+}
+
+
+</style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="navbar-container"></div>
+
+      <div class="container-fluid section">
+        <div class="d-flex flex-column flex-md-row gap-3 equal-columns">
+          <div class="carousel h-100 w-100">
+            <div class="carousel-container">
+              <div
+                id="heroCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="4"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active position-relative">
+                    <img
+                      src="images/sl1.avif"
+                      class="d-block w-100 carousel-img"
+                      alt="Slide 1"
+                    />
+                    <div class="carousel-caption left-caption">
+                      <p>
+                        100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                        crashes and win yours
+                      </p>
+                      <a
+                        href="pages/casino.html"
+                        class="carousel-btn text-decoration-none"
+                        >Play</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="images/sl2.avif"
+                      class="d-block w-100 carousel-img"
+                      alt="Slide 2"
+                    />
+                    <div class="carousel-caption left-caption">
+                      <p>
+                        Bet on cricket and win with David Warner, RoyalKing
+                        ambassador
+                      </p>
+
+                      <a href="pages/casino.html">
+                        <button class="carousel-btn">Join Now</button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="images/sl3.avif"
+                      class="d-block w-100 carousel-img"
+                      alt="Slide 3"
+                    />
+                    <div class="carousel-caption left-caption">
+                      <p>
+                        Boost your chances with +500% bonus on your first
+                        deposit
+                      </p>
+
+                      <a href="pages/casino.html">
+                        <button class="carousel-btn">Get Bonus</button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="images/sl4.avif"
+                      class="d-block w-100 carousel-img"
+                      alt="Slide 4"
+                    />
+                    <div class="carousel-caption left-caption">
+                      <p>
+                        100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                        crashes and win yours
+                      </p>
+
+                      <a href="pages/casino.html">
+                        <button class="carousel-btn">Play</button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="images/sl5.avif"
+                      class="d-block w-100 carousel-img"
+                      alt="Slide 5"
+                    />
+                    <div class="carousel-caption left-caption">
+                      <p>
+                        100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                        crashes and win yours
+                      </p>
+
+                      <a href="pages/casino.html">
+                        <button class="carousel-btn">Play</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cashback position-relative">
+            <img style="height: 100%; width: 100%" src="images/cashback.png" />
+            <div class="carousel-caption casino-caption">
+              <p class="ms-2">Cashback up to 30% on casinos</p>
+              <a href="pages/casino.html" class="casino-btn">Go to casino</a>
+            </div>
+          </div>
+
+          <div class="bonus-first position-relative">
+            <img style="height: 100%; width: 100%" src="images/bonus.avif" />
+            <div class="carousel-caption casino-caption">
+              <p style="margin: 0px 10px">Bonus +500%</p>
+              <a
+                href="pages/casino.html"
+                class="casino-btn bonus-btn"
+                style="margin: 0px 10px"
+              >
+                Get bonus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="cards-wrapper">
+            <div class="scooter card-box scooter-card">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="content">
+                  <h4>RoyalKing giveaway</h4>
+                  <p>100 scooters to win</p>
+                </div>
+                <div class="scooter-img">
+                  <img src="images/scooter.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="bonuses card-box bonuses-card">
+              <div
+                class="d-flex justify-content-between align-items-center gap-2"
+              >
+                <div class="icon-content d-flex gap-2 align-items-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-gift"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Promotions</h4>
+                    <h4>and bonuses</h4>
+                  </div>
+                </div>
+
+                <div class="light-img">
+                  <img src="images/present.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="drive card-box lucky-card">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="content">
+                  <h3>RoyalKing Lucky Drive</h3>
+                  <p>Giving away a Ferrari Roma and other prizes</p>
+                </div>
+                <div class="drive-img">
+                  <img src="images/homepageLink.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="gallery-container first">
+          <div class="image-wrapper">
+            <div class="original-btn d-flex justify-content-between">
+              <div class="head">
+                <h4>Originals</h4>
+              </div>
+              <div class="nav-buttons">
+                <button class="nav-btn prevBtn">&#10094;</button>
+                <button class="nav-btn nextBtn">&#10095;</button>
+              </div>
+            </div>
+
+            <div class="image-track">
+              <img src="images/crash.png" />
+              <img src="images/keno.png" />
+              <img src="images/hashdice.png" />
+              <img src="images/hilo.png" />
+              <img src="images/blackjack.png" />
+              <img src="images/mine.png" />
+              <img src="images/singleKeno.png" />
+              <img src="images/goal.png" />
+              <img src="images/wingo.png" />
+              <img src="images/hashdice.png" />
+              <img src="images/plinko.png" />
+              <img src="images/wheel.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-container other mt-4" data-images-per-page="5">
+          <div class="image-wrapper">
+            <div class="original-head d-flex justify-content-between">
+              <div class="head">
+                <h4>Hot Games</h4>
+              </div>
+              <div class="nav-buttons">
+                <button class="nav-btn prevBtn">&#10094;</button>
+                <button class="nav-btn nextBtn">&#10095;</button>
+              </div>
+            </div>
+
+            <div class="image-track d-flex gap-3">
+              <img src="images/1.png" />
+              <img src="images/273.webp" />
+              <img src="images/306.webp" />
+              <img src="images/1.webp" />
+              <img src="images/blackjack.png" />
+              <img src="images/2.webp" />
+              <img src="images/38.webp" />
+              <img src="images/143.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-container other mt-4" data-images-per-page="5">
+          <div class="image-wrapper">
+            <div class="original-head d-flex justify-content-between">
+              <div class="head">
+                <h4>Slots</h4>
+              </div>
+              <div class="nav-buttons">
+                <button class="nav-btn prevBtn">&#10094;</button>
+                <button class="nav-btn nextBtn">&#10095;</button>
+              </div>
+            </div>
+
+            <div class="image-track">
+              <img src="slots-img/1.png" />
+              <img src="slots-img/2.png" />
+              <img src="slots-img/4.png" />
+              <img src="slots-img/5.png" />
+              <img src="slots-img/6.png" />
+              <img src="slots-img/8.png" />
+              <img src="slots-img/9.png" />
+              <img src="slots-img/10.png" />
+              <img src="slots-img/11.png" />
+              <img src="slots-img/12.png" />
+              <img src="slots-img/13.png" />
+              <img src="slots-img/14.png" />
+              <img src="slots-img/15.png" />
+              <img src="slots-img/16.png" />
+              <img src="slots-img/17.png" />
+              <img src="slots-img/18.png" />
+              <img src="slots-img/19.png" />
+              <img src="slots-img/20.png" />
+              <img src="slots-img/21.png" />
+              <img src="slots-img/22.png" />
+              <img src="slots-img/23.png" />
+              <img src="slots-img/24.png" />
+              <img src="slots-img/25.png" />
+              <img src="slots-img/26.png" />
+              <img src="slots-img/27.png" />
+              <img src="slots-img/28.png" />
+              <img src="slots-img/29.png" />
+              <img src="slots-img/30.png" />
+              <img src="slots-img/31.png" />
+              <img src="slots-img/32.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-container other mt-4" data-images-per-page="5">
+          <div class="image-wrapper">
+            <div class="original-head d-flex justify-content-between">
+              <div class="head">
+                <h4>Live Casino</h4>
+              </div>
+              <div class="nav-buttons">
+                <button class="nav-btn prevBtn">&#10094;</button>
+                <button class="nav-btn nextBtn">&#10095;</button>
+              </div>
+            </div>
+
+            <div class="image-track">
+              <img src="live-img/1.webp" />
+              <img src="live-img/2.webp" />
+              <img src="live-img/3.webp" />
+              <img src="live-img/4.webp" />
+              <img src="live-img/5.webp" />
+              <img src="live-img/6.webp" />
+              <img src="live-img/7.webp" />
+              <img src="live-img/8.webp" />
+              <img src="live-img/9.webp" />
+              <img src="live-img/10.webp" />
+              <img src="live-img/11.webp" />
+              <img src="live-img/12.webp" />
+              <img src="live-img/13.webp" />
+              <img src="live-img/14.webp" />
+              <img src="live-img/15.webp" />
+              <img src="live-img/16.webp" />
+              <img src="live-img/17.webp" />
+              <img src="live-img/18.webp" />
+              <img src="live-img/19.webp" />
+              <img src="live-img/20.webp" />
+              <img src="live-img/21.webp" />
+              <img src="live-img/22.webp" />
+              <img src="live-img/23.webp" />
+              <img src="live-img/23.webp" />
+              <img src="live-img/25.webp" />
+              <img src="live-img/26.webp" />
+              <img src="live-img/27.webp" />
+              <img src="live-img/28.webp" />
+              <img src="live-img/29.webp" />
+              <img src="live-img/30.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-3 w-100 mt-5 game-card">
+          <a
+            href="subpages/homeSpribe.html"
+            class="card-link text-decoration-none text-reset flex-fill"
+          >
+            <div
+              class="spribe d-flex justify-content-between align-items-center h-100"
+            >
+              <div class="content-second">
+                <h4>Spribe</h4>
+                <p>Live Games 24/7</p>
+              </div>
+              <div class="spribe-img">
+                <img src="images/spribe.png" alt="Spribe" />
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="pages/casino.html"
+            class="card-link text-decoration-none text-reset flex-fill"
+          >
+            <div
+              class="spribe d-flex justify-content-between align-items-center h-100"
+            >
+              <div class="content-second">
+                <h4>Casino</h4>
+                <p>Over 3000 games</p>
+              </div>
+              <div class="casino-img">
+                <img src="images/Casino.png" alt="Casino" />
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="pages/liveCasino.html"
+            class="card-link text-decoration-none text-reset flex-fill"
+          >
+            <div
+              class="spribe d-flex justify-content-between align-items-center h-100"
+            >
+              <div class="content-second">
+                <h4>Live-Games</h4>
+                <p>Live dealers</p>
+              </div>
+              <div class="live-img">
+                <img src="images/LiveGames.png" alt="Live Games" />
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="pages/royalking.html"
+            class="card-link text-decoration-none text-reset flex-fill"
+          >
+            <div
+              class="spribe d-flex justify-content-between align-items-center h-100"
+            >
+              <div class="content-second">
+                <h4>Poker</h4>
+                <p>Free Tournaments</p>
+              </div>
+              <div class="poker-img">
+                <img src="images/poker1.png" alt="Poker" />
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="game-section mt-5">
+          <div class="d-flex gap-3">
+            <!-- games block with background and padding -->
+            <div class="games image-section d-flex flex-column gap-4">
+              <!-- Now inside games -->
+              <!-- Scrollable navbar -->
+
+              <div class="d-flex gap-3">
+                <div class="win-img">
+                  <img src="images/1win.png" />
+                </div>
+                <div class="text-head">RoyalKing games</div>
+              </div>
+
+              <!-- Game items -->
+              <div class="d-flex gap-4">
+                <div class="game-item">
+                  <img src="images/crash.png" />
+                  <div
+                    class="d-flex mt-1 align-items-center justify-content-between img-section"
+                  >
+                    <div class="d-flex gap-2">
+                      <img src="images/1win.png" />
+                      <div class="text">RoyalKing games</div>
+                    </div>
+
+                    <img
+                      src="images/star.png"
+                      style="height: 14px; width: 14px"
+                    />
+                  </div>
+                  <div class="subtext">Crash</div>
+                </div>
+
+                <div class="game-item">
+                  <img src="images/mine.png" />
+                  <div
+                    class="d-flex mt-1 align-items-center justify-content-between img-section"
+                  >
+                    <div class="d-flex gap-2">
+                      <img src="images/1win.png" />
+                      <div class="text">RoyalKing games</div>
+                    </div>
+
+                    <img
+                      src="images/star.png"
+                      style="height: 14px; width: 14px"
+                    />
+                  </div>
+                  <div class="subtext">Mine</div>
+                </div>
+
+                <div class="game-item">
+                  <img src="images/plinko.png" />
+                  <div
+                    class="d-flex mt-1 align-items-center justify-content-between img-section"
+                  >
+                    <div class="d-flex gap-2">
+                      <img src="images/1win.png" />
+                      <div class="text">RoyalKing games</div>
+                    </div>
+
+                    <img
+                      src="images/star.png"
+                      style="height: 14px; width: 14px"
+                    />
+                  </div>
+                  <div class="subtext">Plinko</div>
+                </div>
+
+                <div class="game-item">
+                  <img src="images/hashdice.png" />
+                  <div
+                    class="d-flex mt-1 align-items-center justify-content-between img-section"
+                  >
+                    <div class="d-flex gap-2">
+                      <img src="images/1win.png" />
+                      <div class="text">RoyalKing games</div>
+                    </div>
+
+                    <img
+                      src="images/star.png"
+                      style="height: 14px; width: 14px"
+                    />
+                  </div>
+                  <div class="subtext">Hashdice</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- poker block -->
+            <div class="poker">
+              <div class="main-content d-flex gap-3">
+                <div class="win-img">
+                  <img src="images/poker1.png" />
+                </div>
+                <div class="text-head">Poker</div>
+              </div>
+
+              <div class="play-section d-flex gap-3">
+                <div class="bonus">
+                  <p>Come in, play and win</p>
+                  <button>Get bonus</button>
+                </div>
+                <div class="play-cards">
+                  <img src="images/pokerbanner.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-section mt-5">
+          <div class="d-flex gap-3">
+            <!-- games block with background and padding -->
+         <div class="games-second image-section d-flex flex-column gap-2">
+  <!-- Scrollable navbar with scroll buttons -->
+  <div class="scroll-navbar d-flex align-items-center justify-content-between mx-2 mt-4">
+    <button id="scrollLeft" class="scroll-btn" style="margin-right: 5px">
+      &#10094;
+    </button>
+
+    <div id="scrollNavTrack" class="scrollable-navbar d-flex ">
+      <div class="nav-items active">Evolution</div>
+      <div class="nav-items">Big Gaming</div>
+      <div class="nav-items">Micro Gaming</div>
+      <div class="nav-items">Asia Gaming</div>
+      <div class="nav-items">Dream Gaming</div>
+      <div class="nav-items">Sexy Gaming</div>
+      <div class="nav-items">Live 88</div>
+      <div class="nav-items">Playtech Play</div>
+      <div class="nav-items">Ezugi</div>
+      <div class="nav-items">Skywind</div>
+      <div class="nav-items">Pragmatic Play</div>
+      <div class="nav-items">Bet games</div>
+      <div class="nav-items">Illustrate Analytics</div>
+      <div class="nav-items">BTI</div>
+      <div class="nav-items">PP Slot</div>
+      <div class="nav-items">Habanero</div>
+      <div class="nav-items">Elysium</div>
+      <div class="nav-items">Spade Gaming</div>
+      <div class="nav-items">Play'N Go</div>
+      <div class="nav-items">World Match</div>
+      <div class="nav-items">Micro Gaming</div>
+      <div class="nav-items">oneTouch</div>
+      <div class="nav-items">Red Tiger</div>
+      <div class="nav-items">Netent</div>
+      <div class="nav-items">YGGDrasil</div>
+      <div class="nav-items">BNG</div>
+      <div class="nav-items">Playson</div>
+      <div class="nav-items">Playtech Slot</div>
+      <div class="nav-items">CQ9</div>
+      <div class="nav-items">Skywind</div>
+      <div class="nav-items">Wazdan</div>
+      <div class="nav-items">PG Soft</div>
+      <div class="nav-items">Big Time Gaming</div>
+      <div class="nav-items">Pragmatic play</div>
+      <div class="nav-items">No Limit City</div>
+      <div class="nav-items">Relax</div>
+      <div class="nav-items">NextSpin</div>
+      <div class="nav-items">Spinix</div>
+      <div class="nav-items">Naga</div>
+      <div class="nav-items">Hacksaw</div>
+      <div class="nav-items">JiLi</div>
+      <div class="nav-items">Booming</div>
+      <div class="nav-items">Spribe</div>
+      <div class="nav-items">Alize</div>
+      <div class="nav-items">Avaitrix</div>
+      <div class="nav-items">Fast Game</div>
+      
+    </div>
+
+    <button id="scrollRight" class="scroll-btn" style="margin-left  : 5px">
+      &#10095;
+    </button>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Carousel -->
+<div id="gameCarousel" class="carousel slide mt-3">
+
+    <div class="carousel-inner" id="carouselContent" ></div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+            <!-- poker block -->
+            <div class="poker">
+              <div class="main-contents d-flex gap-3">
+                <div class="win-img">
+                  <img src="images/poker1.png" />
+                </div>
+                <div class="text-head">Poker</div>
+              </div>
+
+              <div class="play-section d-flex gap-3">
+                <div class="bonus">
+                  <p>Come in, play and win</p>
+                  <button>Get bonus</button>
+                </div>
+                <div class="play-cards-poker">
+                  <img src="images/pokerbanner.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box mt-5 d-flex justify-content-between">
+          <div class="arrow">
+            <img src="images/arrow2.png" />
+          </div>
+          <div class="main-content">
+            <h3>WELCOME BONUS</h3>
+            <h2>+ 200%</h2>
+            <h4>TO THE FIRST DEPOSIT</h4>
+            <div class="d-flex flex-column align-items-center mt-3">
+              <img class="small" src="images/arrow.svg" />
+              <img class="big" src="images/arrow.svg" />
+            </div>
+          </div>
+          <div class="arrorw">
+            <img src="images/arrow2.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-container"></div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbarPlaceholder = document.getElementById("navbar-container");
+        if (!navbarPlaceholder) {
+          console.error("Navbar container not found");
+          return;
+        }
+
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            navbarPlaceholder.innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading navbar:", error));
+
+        const footerPlaceholder = document.getElementById("footer-container");
+        if (!footerPlaceholder) {
+          console.error("Footer container not found");
+          return;
+        }
+
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            footerPlaceholder.innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading footer:", error));
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".carousel-btn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation(); // Prevent carousel from sliding
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="showGames.js"></script>
+  </body>
+</html>

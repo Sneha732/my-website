@@ -1,0 +1,146 @@
+/* navbar */
+.navbar {
+  background-color: #161e32 !important;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin: 0px 11px !important;
+  position: sticky;
+  top: 0;
+  height: 70px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.navbar-nav {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.navbar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-option {
+  display: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+#aviator-logo {
+  height: 100px; /* Increased height */
+  object-fit: contain;
+}
+
+.login-btn,
+.register-btn {
+  border: none;
+  color: #fff;
+  padding: 5px 20px;
+
+  border-radius: 4px;
+  /* background-color: transparent; */
+  transition: background-color 0.3s ease;
+}
+.register-button{
+  color: #ffffff;
+  font-size: 13px;
+  background-color: #22C55E;
+  padding: 8px;
+  border-radius: 10px;
+}
+.login-btn {
+  border: none;
+  background-color: #1f2841;
+  color: #ffffff;
+  padding: 6px 15px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+}
+.register-btn {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  padding: 6px 10px;
+  background-color: #22b160;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.fa-plus {
+  border-radius: 50%;
+  background-color: #61c78d;
+  padding: 3px 4px;
+}
+.mob-nav {
+  height: 20px;
+  margin: 0px 40px;
+  overflow: hidden;
+  background-color: #090f1f !important;
+  display: none;
+}
+@media (max-width: 1169px) {
+  .nav-menu-items {
+    display: none !important;
+  }
+  .nav-option {
+    display: flex !important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #090f1f !important;
+    margin: 0px 10px !important;
+    position: sticky;
+    top: 0;
+    height: 70px;
+  }
+  .navbar-divider {
+    display: block;
+    height: 1px;
+    background-color: #2e3548;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 367px) {
+  .navbar {
+    margin: 40px;
+    padding: 0;
+  }
+  .logo {
+    max-width: 50px;
+  }
+  .login-btn {
+    padding: 0px 12px !important;
+    font-size: 12px;
+  }
+
+  .register-btn {
+    padding: 5px 7px;
+    font-size: 12px;
+  }
+}
